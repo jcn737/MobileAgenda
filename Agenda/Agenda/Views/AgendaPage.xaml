@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Agenda.Views.AgendaPage"
+             Title="Agenda">
+	<StackLayout Orientation="Vertical" Padding="10,50,10,0" BackgroundColor="WhiteSmoke" Opacity="50">
+		<StackLayout Orientation="Horizontal" Padding="6,5,10,0">
+			<Button	Text="Janeiro" HeightRequest="70" TextColor="Wheat" BackgroundColor="DodgerBlue" WidthRequest="100" Clicked="btnJan" HorizontalOptions="Start"/>
+			<Button	Text="Fevereiro" HeightRequest="70" TextColor="Wheat" BackgroundColor="DodgerBlue" WidthRequest="120"  Clicked="btnFev" HorizontalOptions="CenterAndExpand"/>
+			<Button	Text="Março" HeightRequest="70" TextColor="Wheat" BackgroundColor="DodgerBlue" WidthRequest="100" Clicked="btnMar" HorizontalOptions="End"/>
+		</StackLayout>
+		<StackLayout Orientation="Horizontal" Padding="6,5,10,0">
+			<Button	Text="Abril" HeightRequest="70" TextColor="Wheat" BackgroundColor="DodgerBlue" WidthRequest="100" Clicked="btnAbril" HorizontalOptions="Start"/>
+			<Button	Text="Maio" HeightRequest="70" TextColor="Wheat" BackgroundColor="DodgerBlue" WidthRequest="120" Clicked="btnMaio" HorizontalOptions="CenterAndExpand"/>
+			<Button	Text="Junho" HeightRequest="70" TextColor="Wheat" BackgroundColor="DodgerBlue" WidthRequest="100" Clicked="btnJun" HorizontalOptions="End"/>
+		</StackLayout>
+		<StackLayout Orientation="Horizontal" Padding="6,5,10,0">
+			<Button	Text="Julho" HeightRequest="70" TextColor="Wheat" BackgroundColor="DodgerBlue" WidthRequest="100" Clicked="btnJul" HorizontalOptions="Start"/>
+			<Button	Text="Agosto" HeightRequest="70" TextColor="Wheat" BackgroundColor="DodgerBlue" WidthRequest="120" Clicked="btnAgo" HorizontalOptions="CenterAndExpand"/>
+			<Button	Text="Setembro" HeightRequest="70" TextColor="Wheat" BackgroundColor="DodgerBlue" WidthRequest="100" Clicked="btnSet" HorizontalOptions="End"/>
+		</StackLayout>
+		<StackLayout Orientation="Horizontal" Padding="6,5,10,0">
+			<Button	Text="Outubro" HeightRequest="70" TextColor="Wheat" BackgroundColor="DodgerBlue" WidthRequest="100" Clicked="btnOut" HorizontalOptions="Start"/>
+			<Button	Text="Novembro" HeightRequest="70" TextColor="Wheat" BackgroundColor="DodgerBlue" WidthRequest="120" Clicked="btnNov" HorizontalOptions="CenterAndExpand"/>
+			<Button	Text="Dezembro" HeightRequest="70" TextColor="Wheat" BackgroundColor="DodgerBlue" WidthRequest="100" Clicked="btnDez" HorizontalOptions="End"/>
+		</StackLayout>
+		<StackLayout HorizontalOptions="CenterAndExpand">
+			<!--Criar metodo gravar id do aluno-->
+			<!--<EntryCell x:Name="txtIdAluno" Placeholder="ID do aluno"/>-->
+		</StackLayout>
+    </StackLayout>
+</ContentPage>

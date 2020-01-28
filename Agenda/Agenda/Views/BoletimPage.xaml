@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Agenda.Views.BoletimPage"
+             Title="Boletim">
+    <ContentPage.Content>
+		<StackLayout Orientation="Vertical">
+			<StackLayout Orientation="Vertical" Padding="10,5,10,0">
+				<ListView x:Name="listaBoletim" 
+					  HasUnevenRows="True"					  
+					  BackgroundColor="WhiteSmoke" 
+					  HeightRequest="550"
+					  SeparatorColor="Black">
+					<ListView.ItemTemplate>
+						<DataTemplate>
+							<ViewCell>
+								<!--<ViewCell.ContextActions>
+								<MenuItem Clicked="OnAtualizar" CommandParameter="{Binding .}" Text="Atualizar" />
+								<MenuItem Clicked="OnDeletar" CommandParameter="{Binding .}" Text="Deletar" IsDestructive="True" />
+							</ViewCell.ContextActions>-->
+								<StackLayout Padding="10,10" Orientation="Vertical">
+									<Label Text="ID do Aluno" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding ID_Aluno}" TextColor="Black" Style="ComicSans" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Nome" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Nome}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Matematica" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Matematica}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Portugues" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Portugues}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Geografia" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Geografia}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Ingles" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Ingles}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Fisica" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Fisica}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Quimica" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Quimica}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Biologia" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Biologia}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Artes" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Artes}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Musica" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Musica}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Educacao Fisica" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding EducacaoFisica}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Atividades Complementares" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding AtividadesComplementares}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+								</StackLayout>
+							</ViewCell>
+						</DataTemplate>
+					</ListView.ItemTemplate>
+				</ListView>
+			</StackLayout>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

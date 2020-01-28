@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Agenda.Views.LoginView">
+    <ContentPage.Content>
+		<StackLayout Margin="10">
+			<!--<Frame BackgroundColor="#1E90FF" HeightRequest="100">
+				<Label TextColor="White" Text="Agenda" VerticalOptions="Center" HorizontalTextAlignment="Center" FontSize="Large" />
+				<Label TextColor="White" Text="Escolas Inteligentes" VerticalOptions="EndAndExpand" HorizontalTextAlignment="Center" FontSize="Medium" />
+				--><!--<Image BackgroundColor="#1E90FF" Aspect="AspectFill" HeightRequest="100" WidthRequest="100" />--><!--
+			</Frame>-->
+			<StackLayout BackgroundColor="#1E90FF" HeightRequest="100">
+				<Label TextColor="White" Text="Agenda" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" FontSize="30" />
+				<Label TextColor="White" Text="Escolas Inteligentes" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" FontSize="18" />
+				<!--<Image BackgroundColor="#1E90FF" Aspect="AspectFill" HeightRequest="100" WidthRequest="100" />-->
+			</StackLayout>
+			<Label Text="Login" HorizontalTextAlignment="Center" FontSize="Large" />
+			<Entry x:Name="txtUsuario" PlaceholderColor="Gray" TextColor="Gray" Placeholder="Usuário" Text="{Binding Usuario}"/>
+			<Entry x:Name="txtSenha" PlaceholderColor="Gray" Placeholder="Senha" IsPassword="True" Text="{Binding Senha}"/>
+			<Button x:Name="btnLogin" Clicked="BtnLogar_Clicked" Text="Login" BackgroundColor="#1E90FF" TextColor="White" />
+			<!--<Button Command="{Binding LoginCommand}"  CommandParameter="{Binding Source={x:Reference txtSenha}, Path=Text}" Text="Login" BackgroundColor="Orange" TextColor="White" />-->
+			<!--<Button Command="{Binding IncluirUsuario}"  Text="Incluir Usuário" BackgroundColor="Orange" TextColor="White" />-->
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

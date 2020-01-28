@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Agenda.Views.SetembroPage"
+			 Title="Setembro">
+	<StackLayout Orientation="Vertical">
+		<StackLayout Orientation="Vertical" Padding="10,5,10,0">
+			<ListView x:Name="listaSetembro" 
+					  BackgroundColor="WhiteSmoke" 
+					  SeparatorColor="Blue">
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<ViewCell>
+							<ViewCell.ContextActions>
+								<!--<MenuItem Clicked="OnAtualizar" CommandParameter="{Binding .}" Text="Atualizar" />
+								<MenuItem Clicked="OnDeletar" CommandParameter="{Binding .}" Text="Deletar" IsDestructive="True" />-->
+							</ViewCell.ContextActions>
+							<StackLayout Padding="10,10" Orientation="Horizontal">
+								<Label Text="1 - " TextColor="Blue" HorizontalOptions="Start"/>
+								<Label Text="{Binding Um}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="2 - " TextColor="Blue" HorizontalOptions="Start"/>
+								<Label Text="{Binding Dois}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="3 - " TextColor="Blue" HorizontalOptions="Start"/>
+								<Label Text="{Binding Tres}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="4 - " TextColor="Blue" HorizontalOptions="Start"/>
+								<Label Text="{Binding Quatro}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="5 - " TextColor="Blue" HorizontalOptions="Start"/>
+								<Label Text="{Binding Cinco}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="6 - " TextColor="Blue" HorizontalOptions="Start"/>
+								<Label Text="{Binding Seis}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="7 - " TextColor="Blue" HorizontalOptions="Start"/>
+								<Label Text="{Binding Sete}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="8 - " TextColor="Blue" HorizontalOptions="Start"/>
+								<Label Text="{Binding Oito}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="9 - " TextColor="Blue" HorizontalOptions="Start"/>
+								<Label Text="{Binding Nove}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="10 - " TextColor="Blue" HorizontalOptions="Start"/>
+								<Label Text="{Binding Dez}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="11 - " TextColor="Blue" HorizontalOptions="Start"/>
+								<Label Text="{Binding Onze}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="12 - " TextColor="Blue" HorizontalOptions="Start"/>
+								<Label Text="{Binding Doze}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="13 - " TextColor="Blue" HorizontalOptions="Start"/>
+								<Label Text="{Binding Treze}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="14 - " TextColor="Blue" HorizontalOptions="Start"/>
+								<Label Text="{Binding Quatroze}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="15 - " TextColor="Blue" HorizontalOptions="Start"/>
+								<Label Text="{Binding Quinze}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="16 - " TextColor="Blue" HorizontalOptions="Start"/>
+								<Label Text="{Binding Dezesseis}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="17 - " TextColor="Blue" HorizontalOptions="Start"/>
+								<Label Text="{Binding Dezessete}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="18 - " TextColor="Blue" HorizontalOptions="Start"/>
+								<Label Text="{Binding Dezoito}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="19 - " TextColor="Blue" HorizontalOptions="Start"/>
+								<Label Text="{Binding Dezenove}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="20 - " TextColor="Blue" HorizontalOptions="Start"/>
+								<Label Text="{Binding Vinte}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="21 - " TextColor="Blue" HorizontalOptions="Start"/>
+								<Label Text="{Binding Vinte_Um}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="22 - " TextColor="Blue" HorizontalOptions="Start"/>
+								<Label Text="{Binding Vinte_Dois}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="23 - " TextColor="Blue" HorizontalOptions="Start"/>
+								<Label Text="{Binding Vinte_Tres}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="24 - " TextColor="Blue" HorizontalOptions="Start"/>
+								<Label Text="{Binding Vinte_Quatro}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="25 - " TextColor="Blue" HorizontalOptions="Start"/>
+								<Label Text="{Binding Vinte_Cinco}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="26 - " TextColor="Blue" HorizontalOptions="Start"/>
+								<Label Text="{Binding Vinte_Seis}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="27 - " TextColor="Blue" HorizontalOptions="Start"/>
+								<Label Text="{Binding Vinte_Sete}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="28 - " TextColor="Blue" HorizontalOptions="Start"/>
+								<Label Text="{Binding Vinte_Oito}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="29 - " TextColor="Blue" HorizontalOptions="Start"/>
+								<Label Text="{Binding Vinte_Nove}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="30 - " TextColor="Blue" HorizontalOptions="Start"/>
+								<Label Text="{Binding Trinta}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+							</StackLayout>
+						</ViewCell>
+					</DataTemplate>
+				</ListView.ItemTemplate>
+			</ListView>
+		</StackLayout>
+	</StackLayout>
+</ContentPage>

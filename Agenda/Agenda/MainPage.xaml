@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Agenda"
+             x:Class="Agenda.MainPage">
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <StackLayout Orientation="Vertical">
+				<StackLayout Orientation="Horizontal" BackgroundColor="#1E90FF"
+                     HeightRequest="100">
+					<Image Source="agenda_icon.png"
+                         WidthRequest="60"
+                         HeightRequest="60"
+                         HorizontalOptions="Start"/>
+                    <StackLayout Orientation="Vertical" VerticalOptions="Center">
+                        <Label Text="Agenda"
+                        FontSize="20"
+                        TextColor="White"
+                        HorizontalOptions="Start"/>
+                        <Label Text="Escola Inteligente"
+                        FontSize="15"
+                        TextColor="White"
+                        HorizontalOptions="Start"/>
+                    </StackLayout>
+                </StackLayout>
+                <ListView x:Name="navigationDrawerList"
+                  RowHeight="60"
+                  SeparatorVisibility="None"
+                  BackgroundColor="#e8e8e8"
+                  ItemSelected="OnMenuItemSelected">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout VerticalOptions="FillAndExpand"
+									 Orientation="Horizontal"
+									 Padding="20,10,0,10"
+									 Spacing="20">
+
+                                    <Image Source="{Binding Icon}"
+										 WidthRequest="30"
+										 HeightRequest="30"
+										 VerticalOptions="Center" />
+
+                                    <Label Text="{Binding Title}"
+										 FontSize="Default"
+										 VerticalOptions="Center"
+										 TextColor="Black"/>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>

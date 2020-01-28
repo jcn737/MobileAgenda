@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Agenda.Views.ListaMatPage"
+             Title="Lista de Materiais">
+	<ContentPage.Content>
+		<StackLayout Orientation="Vertical">
+			<StackLayout Orientation="Vertical" Padding="10,5,10,0">
+				<ListView x:Name="listaMat" 
+					  HasUnevenRows="True"					  
+					  BackgroundColor="WhiteSmoke" 
+					  HeightRequest="550"
+					  ItemSelected="listview_ItemSelected"
+					  SeparatorColor="Black">
+					<ListView.ItemTemplate>
+						<DataTemplate>
+							<ViewCell>
+								<!--<ViewCell.ContextActions>
+								<MenuItem Clicked="OnAtualizar" CommandParameter="{Binding .}" Text="Atualizar" />
+								<MenuItem Clicked="OnDeletar" CommandParameter="{Binding .}" Text="Deletar" IsDestructive="True" />
+							</ViewCell.ContextActions>-->
+								<StackLayout Padding="10,10" Orientation="Vertical">
+									<Label Text="ID do Aluno" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding ID_Aluno}" TextColor="Black" Style="ComicSans" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Primeira" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Primeira}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Segunda" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Segunda}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Terceira" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Terceira}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Quarta" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Quarta}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Quinta" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Quinta}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Sexta" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Sexta}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Setima" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Setima}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Oitava" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Oitava}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Nona" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Nona}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+								</StackLayout>
+							</ViewCell>
+						</DataTemplate>
+					</ListView.ItemTemplate>
+				</ListView>
+			</StackLayout>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

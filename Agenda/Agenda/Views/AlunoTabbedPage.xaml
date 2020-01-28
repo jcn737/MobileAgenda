@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Agenda.Views.AlunoTabbedPage"
+			 Title="Espaço Aluno">
+	<!--<ContentPage Title="Mensagem">
+		<StackLayout Margin="10">
+			<StackLayout>
+				<Label Text="Dados" HorizontalTextAlignment="Center" FontSize="Large" />
+			</StackLayout>
+			<BoxView Color="WhiteSmoke" WidthRequest="300" HeightRequest="300" VerticalOptions="Center" HorizontalOptions="Center">
+				<Label x:Name="lblIDAluno" Text="Nome Aluno" HorizontalTextAlignment="Center" FontSize="Medium" />
+				<Label x:Name="lblIDAlunoCampo"  HorizontalTextAlignment="Center" FontSize="Medium" />
+			</BoxView>
+			<StackLayout>
+				<Entry x:Name="txtSerie" PlaceholderColor="Gray" TextColor="Gray" Placeholder="Código do aluno do Aluno" Text="{Binding Serie}"/>
+				<Editor x:Name="txtCampoTexto" PlaceholderColor="Gray" Placeholder="Digite uma mensagem" Text="{Binding CampoTexto}"/>
+			</StackLayout>
+			<StackLayout>
+				<Button x:Name="btnEnviarProfessora" Clicked="btnEnviarProfessora_Clicked" Text="Enviar" BackgroundColor="#1E90FF" TextColor="White" />
+				<Button Command="{Binding LoginCommand}"  CommandParameter="{Binding Source={x:Reference txtSenha}, Path=Text}" Text="Login" BackgroundColor="Orange" TextColor="White" />
+			</StackLayout>
+		</StackLayout>
+	</ContentPage>
+	<ContentPage Title="Dados">
+		<StackLayout HorizontalOptions="Center" VerticalOptions="Center" >
+			<ListView x:Name="listaAluno" 
+					  BackgroundColor="WhiteSmoke" 
+					  SeparatorColor="Blue">
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<ViewCell>
+							<ViewCell.ContextActions>
+								--><!--<MenuItem Clicked="OnAtualizar" CommandParameter="{Binding .}" Text="Atualizar" />
+								<MenuItem Clicked="OnDeletar" CommandParameter="{Binding .}" Text="Deletar" IsDestructive="True" />--><!--
+							</ViewCell.ContextActions>
+							<StackLayout Padding="10,10" Orientation="Horizontal">
+								<Label Text="Código do Aluno - " TextColor="Blue" HorizontalOptions="Start"/>
+								<Label Text="{Binding ID_Aluno}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="Nome - " TextColor="Blue" HorizontalOptions="Start"/>
+								<Label Text="{Binding Nome}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="Idade - " TextColor="Blue" HorizontalOptions="Start"/>
+								<Label Text="{Binding Idade}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="Serie - " TextColor="Blue" HorizontalOptions="Start"/>
+								<Label Text="{Binding Serie}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="Turma - " TextColor="Blue" HorizontalOptions="Start"/>
+								<Label Text="{Binding Turma}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="Nome da Mae - " TextColor="Blue" HorizontalOptions="Start"/>
+								<Label Text="{Binding Nome_Mae}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="Nome do Pai - " TextColor="Blue" HorizontalOptions="Start"/>
+								<Label Text="{Binding Nome_Pai}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="Nome da Professor(a) - " TextColor="Blue" HorizontalOptions="Start"/>
+								<Label Text="{Binding Nome_Prof}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="Email - " TextColor="Blue" HorizontalOptions="Start"/>
+								<Label Text="{Binding Email}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+							</StackLayout>
+						</ViewCell>
+					</DataTemplate>
+				</ListView.ItemTemplate>
+			</ListView>
+		</StackLayout>
+	</ContentPage>
+	<ContentPage Title="Monitores">
+		<StackLayout HorizontalOptions="Center" VerticalOptions="Center" >
+			<Label Text="Página 1" FontSize="30" />
+		</StackLayout>
+	</ContentPage>-->
+</TabbedPage>	

@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Agenda.Views.ContatoPage"
+			 Title="Contato">
+	<ContentPage.Content>
+		<Grid Margin="20" RowSpacing="10">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="80" />
+				<ColumnDefinition/>
+			</Grid.ColumnDefinitions>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="80"/>
+				<RowDefinition Height="80"/>
+				<RowDefinition Height="80"/>
+				<RowDefinition Height="80"/>
+				<RowDefinition Height="80"/>
+				<RowDefinition/>
+			</Grid.RowDefinitions>
+			<StackLayout Grid.Row="0" Grid.ColumnSpan="2" BackgroundColor="LightBlue">
+				<Label Text="Diretoria" TextColor="Blue" FontSize="Medium"  VerticalOptions="Center" VerticalTextAlignment="Center"/>
+				<StackLayout Orientation="Horizontal" Grid.Row="1">
+							<Image Source="phone.jpg" WidthRequest="20" HeightRequest="20" />
+							<!--<Label Text="{Binding Contato.TelefoneDiretoria}" TextColor="Blue"  VerticalOptions="Center" VerticalTextAlignment="Center"/>-->
+							<Label Text="Chamar Diretoria" TextColor="Blue"  VerticalOptions="Center" VerticalTextAlignment="Center"/>
+							<Label.GestureRecognizers>
+								<TapGestureRecognizer Tapped="OnTapTelefoneDiretoria" NumberOfTapsRequired="1"/>
+							</Label.GestureRecognizers>
+						</StackLayout>
+						<StackLayout Orientation="Horizontal">
+							<Image Source="email16.png" WidthRequest="20" HeightRequest="20"/>
+							<Label Text="E-mail diretoria" TextColor="Blue"/>
+							<Label.GestureRecognizers>
+								<TapGestureRecognizer Tapped="OnTapEmailDiretoria" NumberOfTapsRequired="1"/>
+							</Label.GestureRecognizers>
+						</StackLayout>
+			</StackLayout>
+
+			<StackLayout Grid.Row="1" Grid.ColumnSpan="2" BackgroundColor="WhiteSmoke">
+			<Label Text="Coordenadoria" TextColor="Blue" FontSize="Medium"  VerticalOptions="Center" VerticalTextAlignment="Center"/>
+				<StackLayout Orientation="Horizontal">
+					<Image Source="phone.jpg" WidthRequest="20" HeightRequest="20" />
+					<!--<Label Text="{Binding Contato.TelefoneCoordenadoria}" TextColor="Blue"  VerticalOptions="Center" VerticalTextAlignment="Center"/>-->
+					<Label Text="Chamar Coordenadoria" TextColor="Blue"  VerticalOptions="Center" VerticalTextAlignment="Center"/>
+					<Label.GestureRecognizers>
+						<TapGestureRecognizer Tapped="OnTapTelefoneCoordenadoria" NumberOfTapsRequired="1"/>
+					</Label.GestureRecognizers>
+				</StackLayout>
+				<StackLayout Orientation="Horizontal">
+					<Image Source="email16.png" WidthRequest="20" HeightRequest="20"/>
+					<!--<Label Text="{Binding Cliente.EmailCoordenadoria}" TextColor="Blue"/>-->
+					<Label Text="E-mail Coordenadoria" TextColor="Blue"/>
+					<Label.GestureRecognizers>
+						<TapGestureRecognizer Tapped="OnTapEmailCoordenadoria" NumberOfTapsRequired="1"/>
+					</Label.GestureRecognizers>
+				</StackLayout>
+			</StackLayout>
+
+			<StackLayout Grid.Row="2" Grid.ColumnSpan="2" BackgroundColor="WhiteSmoke">
+				<Label Text="Secretaria" TextColor="Blue" FontSize="Medium"  VerticalOptions="Center" VerticalTextAlignment="Center"/>
+				<StackLayout Orientation="Horizontal">
+					<Image Source="phone.jpg" WidthRequest="20" HeightRequest="20" />
+					<!--<Label Text="{Binding Contato.TelefoneSecretaria}" TextColor="Blue"  VerticalOptions="Center" VerticalTextAlignment="Center"/>-->
+					<Label Text="Chamar Secretária" TextColor="Blue"  VerticalOptions="Center" VerticalTextAlignment="Center"/>
+					<Label.GestureRecognizers>
+						<TapGestureRecognizer Tapped="OnTapTelefoneSecretaria" NumberOfTapsRequired="1"/>
+					</Label.GestureRecognizers>
+				</StackLayout>
+				<StackLayout Orientation="Horizontal">
+					<Image Source="email16.png" WidthRequest="20" HeightRequest="20"/>
+					<!--<Label Text="{Binding Cliente.EmailSecretaria}" TextColor="Blue"/>-->
+					<Label Text="E-mail Secretária" TextColor="Blue"/>
+					<Label.GestureRecognizers>
+						<TapGestureRecognizer Tapped="OnTapEmailSecretaria" NumberOfTapsRequired="1"/>
+					</Label.GestureRecognizers>
+				</StackLayout>
+			</StackLayout>
+
+			<StackLayout Grid.Row="3" Grid.ColumnSpan="2" BackgroundColor="WhiteSmoke">
+						<Label Text="Financeiro" TextColor="Blue" FontSize="Medium"  VerticalOptions="Center" VerticalTextAlignment="Center"/>
+				<StackLayout Orientation="Horizontal">
+					<Image Source="phone.jpg" WidthRequest="20" HeightRequest="20" />
+					<!--<Label Text="{Binding Contato.TelefoneFinanceiro}" TextColor="Blue"  VerticalOptions="Center" VerticalTextAlignment="Center"/>-->
+					<Label Text="Chamar Financeiro" TextColor="Blue"  VerticalOptions="Center" VerticalTextAlignment="Center"/>
+					<Label.GestureRecognizers>
+						<TapGestureRecognizer Tapped="OnTapTelefoneFinanceiro" NumberOfTapsRequired="1"/>
+					</Label.GestureRecognizers>
+				</StackLayout>
+				<StackLayout Orientation="Horizontal">
+					<Image Source="email16.png" WidthRequest="20" HeightRequest="20"/>
+					<!--<Label Text="{Binding Cliente.EmailFinanceiro}" TextColor="Blue"/>-->
+					<Label Text="E-mail Financeiro" TextColor="Blue"/>
+					<Label.GestureRecognizers>
+						<TapGestureRecognizer Tapped="OnTapEmailFinanceiro" NumberOfTapsRequired="1"/>
+					</Label.GestureRecognizers>
+				</StackLayout>
+			</StackLayout>
+
+			<StackLayout Grid.Row="4" Grid.ColumnSpan="2" BackgroundColor="WhiteSmoke">
+				<Label Text="Professora" TextColor="Blue" FontSize="Medium"  VerticalOptions="Center" VerticalTextAlignment="Center"/>
+				<StackLayout Orientation="Horizontal">
+					<Image Source="phone.jpg" WidthRequest="20" HeightRequest="20" />
+					<!--<Label Text="{Binding Contato.TelefoneProfessora}" TextColor="Blue"  VerticalOptions="Center" VerticalTextAlignment="Center"/>-->
+					<Label Text="Chamar Professora" TextColor="Blue"  VerticalOptions="Center" VerticalTextAlignment="Center"/>
+					<Label.GestureRecognizers>
+						<TapGestureRecognizer Tapped="OnTapTelefoneProfessora" NumberOfTapsRequired="1"/>
+					</Label.GestureRecognizers>
+				</StackLayout>
+				<StackLayout Orientation="Horizontal">
+					<Image Source="email16.png" WidthRequest="20" HeightRequest="20"/>
+					<!--<Label Text="{Binding Cliente.EmailProfessora}" TextColor="Blue"/>-->
+					<Label Text="E-mail Professora" TextColor="Blue"/>
+					<Label.GestureRecognizers>
+						<TapGestureRecognizer Tapped="OnTapEmailProfessora" NumberOfTapsRequired="1"/>
+					</Label.GestureRecognizers>
+				</StackLayout>
+			</StackLayout>
+		</Grid>
+	</ContentPage.Content>
+</ContentPage>

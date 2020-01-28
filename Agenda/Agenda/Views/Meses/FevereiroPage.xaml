@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Agenda.Views.FevereiroPage"
+			 Title="Fevereiro">
+	<StackLayout Orientation="Vertical">
+		<StackLayout Orientation="Vertical" Padding="10,5,10,0">
+			<ListView x:Name="listaFevereiro" 
+					  BackgroundColor="WhiteSmoke" 
+					  HasUnevenRows="True"
+					  SeparatorColor="Blue">
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<ViewCell>
+							<ViewCell.ContextActions>
+								<!--<MenuItem Clicked="OnAtualizar" CommandParameter="{Binding .}" Text="Atualizar" />
+								<MenuItem Clicked="OnDeletar" CommandParameter="{Binding .}" Text="Deletar" IsDestructive="True" />-->
+							</ViewCell.ContextActions>
+							<StackLayout Padding="10,10" Orientation="Vertical">
+								<Label Text="Dia 1" TextColor="Red" HorizontalOptions="Start"/>
+								<Label Text="{Binding Um}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="Dia 2" TextColor="Red" HorizontalOptions="Start"/>
+								<Label Text="{Binding Dois}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="Dia 3" TextColor="Red" HorizontalOptions="Start"/>
+								<Label Text="{Binding Tres}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="Dia 4" TextColor="Red" HorizontalOptions="Start"/>
+								<Label Text="{Binding Quatro}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="Dia 5" TextColor="Red" HorizontalOptions="Start"/>
+								<Label Text="{Binding Cinco}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="Dia 6" TextColor="Red" HorizontalOptions="Start"/>
+								<Label Text="{Binding Seis}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="Dia 7" TextColor="Red" HorizontalOptions="Start"/>
+								<Label Text="{Binding Sete}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="Dia 8" TextColor="Red" HorizontalOptions="Start"/>
+								<Label Text="{Binding Oito}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="Dia 9" TextColor="Red" HorizontalOptions="Start"/>
+								<Label Text="{Binding Nove}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="Dia 10" TextColor="Red" HorizontalOptions="Start"/>
+								<Label Text="{Binding Dez}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="Dia 11" TextColor="Red" HorizontalOptions="Start"/>
+								<Label Text="{Binding Onze}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="Dia 12" TextColor="Red" HorizontalOptions="Start"/>
+								<Label Text="{Binding Doze}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="Dia 13" TextColor="Red" HorizontalOptions="Start"/>
+								<Label Text="{Binding Treze}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="Dia 14" TextColor="Red" HorizontalOptions="Start"/>
+								<Label Text="{Binding Quatroze}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="Dia 15" TextColor="Red" HorizontalOptions="Start"/>
+								<Label Text="{Binding Quinze}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="Dia 16" TextColor="Red" HorizontalOptions="Start"/>
+								<Label Text="{Binding Dezesseis}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="Dia 17" TextColor="Red" HorizontalOptions="Start"/>
+								<Label Text="{Binding Dezessete}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="Dia 18" TextColor="Red" HorizontalOptions="Start"/>
+								<Label Text="{Binding Dezoito}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="Dia 19" TextColor="Red" HorizontalOptions="Start"/>
+								<Label Text="{Binding Dezenove}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="Dia 20" TextColor="Red" HorizontalOptions="Start"/>
+								<Label Text="{Binding Vinte}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="Dia 21" TextColor="Red" HorizontalOptions="Start"/>
+								<Label Text="{Binding Vinte_Um}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="Dia 22" TextColor="Red" HorizontalOptions="Start"/>
+								<Label Text="{Binding Vinte_Dois}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="Dia 23" TextColor="Red" HorizontalOptions="Start"/>
+								<Label Text="{Binding Vinte_Tres}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="Dia 24" TextColor="Red" HorizontalOptions="Start"/>
+								<Label Text="{Binding Vinte_Quatro}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="Dia 25" TextColor="Red" HorizontalOptions="Start"/>
+								<Label Text="{Binding Vinte_Cinco}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="Dia 26" TextColor="Red" HorizontalOptions="Start"/>
+								<Label Text="{Binding Vinte_Seis}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="Dia 27" TextColor="Red" HorizontalOptions="Start"/>
+								<Label Text="{Binding Vinte_Sete}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="Dia 28" TextColor="Red" HorizontalOptions="Start"/>
+								<Label Text="{Binding Vinte_Oito}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+								<Label Text="Dia 29" TextColor="Red" HorizontalOptions="Start"/>
+								<Label Text="{Binding Vinte_Nove}" TextColor="Blue" HorizontalOptions="StartAndExpand"/>
+							</StackLayout>
+						</ViewCell>
+					</DataTemplate>
+				</ListView.ItemTemplate>
+			</ListView>
+		</StackLayout>
+	</StackLayout>
+</ContentPage>

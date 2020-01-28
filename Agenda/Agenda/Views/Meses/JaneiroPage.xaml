@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Agenda.Views.JaneiroPage"
+			 Title="Janeiro">
+	<ContentPage.Content>
+		<StackLayout Orientation="Vertical">
+			<StackLayout Orientation="Vertical" Padding="10,5,10,0">
+				<ListView x:Name="listaJaneiro" 
+					  HasUnevenRows="True"					  
+					  BackgroundColor="WhiteSmoke" 
+					  HeightRequest="550"
+					  SeparatorColor="Black">
+					<ListView.ItemTemplate>
+						<DataTemplate>
+							<ViewCell>
+								<!--<ViewCell.ContextActions>
+								<MenuItem Clicked="OnAtualizar" CommandParameter="{Binding .}" Text="Atualizar" />
+								<MenuItem Clicked="OnDeletar" CommandParameter="{Binding .}" Text="Deletar" IsDestructive="True" />
+							</ViewCell.ContextActions>-->
+								<StackLayout Padding="10,10" Orientation="Vertical">
+									<Label Text="Dia 1" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Um}" TextColor="Black" Style="ComicSans" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Dia 2" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Dois}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Dia 3" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Tres}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Dia 4" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Quatro}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Dia 5" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Cinco}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Dia 6" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Seis}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Dia 7" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Sete}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Dia 8" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Oito}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Dia 9" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Nove}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Dia 10" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Dez}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Dia 11" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Onze}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Dia 12" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Doze}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Dia 13" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Treze}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Dia 14" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Quatroze}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Dia 15" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Quinze}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Dia 16" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Dezesseis}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Dia 17" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Dezessete}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Dia 18" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Dezoito}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Dia 19" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Dezenove}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Dia 20" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Vinte}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Dia 21" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Vinte_Um}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Dia 22" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Vinte_Dois}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Dia 23" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Vinte_Tres}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Dia 24" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Vinte_Quatro}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Dia 25" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Vinte_Cinco}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Dia 26" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Vinte_Seis}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Dia 27" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Vinte_Sete}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Dia 28" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Vinte_Oito}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Dia 29" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Vinte_Nove}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Dia 30" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Trinta}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+									<Label Text="Dia 31" TextColor="IndianRed" HorizontalOptions="Start" FontSize="Medium"/>
+									<Label Text="{Binding Trinta_Um}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+								</StackLayout>
+							</ViewCell>
+						</DataTemplate>
+					</ListView.ItemTemplate>
+				</ListView>
+			</StackLayout>
+		</StackLayout>
+	</ContentPage.Content>	
+</ContentPage>
